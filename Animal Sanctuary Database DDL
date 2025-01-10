@@ -1,0 +1,293 @@
+CREATE TABLE animal (
+    animal_id              INTEGER NOT NULL,
+    animal_species_id                INTEGER NOT NULL,
+    animal_enclosure_id             INTEGER NOT NULL,
+    animal_caretaker      INTEGER NOT NULL,
+    animal_name            VARCHAR2(20),
+    animal_sex             CHAR(1),
+    animal_dob             DATE,
+    animal_special_diet    VARCHAR2(100),
+    animal_rescue_location VARCHAR2(100)
+);
+
+ALTER TABLE animal ADD CONSTRAINT animal_pk PRIMARY KEY ( animal_id );
+
+CREATE TABLE donation (
+    transaction_id     INTEGER NOT NULL,
+    transaction_type   CHAR(1) NOT NULL,
+    transaction_date   DATE,
+    transaction_amount NUMBER,
+    donor_id           INTEGER
+);
+
+ALTER TABLE donation ADD CONSTRAINT donation_pk PRIMARY KEY ( transaction_id );
+
+CREATE TABLE donor (
+    donor_id            INTEGER NOT NULL,
+    donor_name          VARCHAR2(100),
+    donor_contact_phone VARCHAR2(10),
+    donor_contact_email VARCHAR2(30),
+    donor_description   VARCHAR2(1000),
+    donor_website       VARCHAR2(200)
+);
+
+ALTER TABLE donor ADD CONSTRAINT donor_pk PRIMARY KEY ( donor_id );
+
+CREATE TABLE employee (
+    employee_id             INTEGER NOT NULL,
+    employee_role_id            INTEGER NOT NULL,
+    employee_fname          VARCHAR2(100),
+    employee_lname          VARCHAR2(100),
+    employee_street_address VARCHAR2(100),
+    employee_city           VARCHAR2(100),
+    employee_state          VARCHAR2(100),
+    employee_zipcode        VARCHAR2(4),
+    employee_phone          VARCHAR2(10),
+    employee_email          VARCHAR2(100)
+);
+
+ALTER TABLE employee ADD CONSTRAINT employee_pk PRIMARY KEY ( employee_id );
+
+CREATE TABLE enclosure (
+    enclosure_id          INTEGER NOT NULL,
+    enclosure_employee_id  INTEGER NOT NULL,
+    enclosure_area        NUMBER,
+    enclosure_status      VARCHAR2(100),
+    enclosure_description VARCHAR2(1000),
+    last_cleaned_date     DATE,
+    last_food_stock_date  DATE
+);
+
+ALTER TABLE enclosure ADD CONSTRAINT enclosure_pk PRIMARY KEY ( enclosure_id );
+
+CREATE TABLE medical_supplies (
+    item_id            INTEGER NOT NULL,
+    tx_id              INTEGER NOT NULL,
+    supply_qty         VARCHAR2(100),
+    supply_description VARCHAR2(1000)
+);
+
+ALTER TABLE medical_supplies ADD CONSTRAINT medical_supplies_pk PRIMARY KEY ( item_id, tx_id );
+
+CREATE TABLE medical_tx (
+    tx_id          INTEGER NOT NULL,
+    tx_animal_id        INTEGER NOT NULL,
+    tx_employee_id   INTEGER NOT NULL,
+    tx_start_date  DATE,
+    tx_end_date    DATE,
+    tx_description VARCHAR2(1000)
+);
+
+ALTER TABLE medical_tx ADD CONSTRAINT medical_tx_pk PRIMARY KEY ( tx_id );
+
+CREATE TABLE Sanctuary_Order (
+    order_id                   INTEGER NOT NULL,
+    order_supplier_id       INTEGER NOT NULL,
+    order_transaction_id INTEGER NOT NULL,
+    order_qty                  INTEGER,
+    order_date                 DATE
+);
+
+ALTER TABLE Sanctuary_Order ADD CONSTRAINT order_pk PRIMARY KEY ( order_id );
+
+CREATE TABLE order_line (
+    item_id  INTEGER NOT NULL,
+    order_id INTEGER NOT NULL,
+    qty      INTEGER
+);
+
+ALTER TABLE order_line ADD CONSTRAINT stock_pk PRIMARY KEY ( item_id,
+                                                             order_id );
+
+CREATE TABLE remuneration (
+    transaction_id     INTEGER NOT NULL,
+    transaction_type   CHAR(1) NOT NULL,
+    transaction_date   DATE,
+    transaction_amount NUMBER,
+    employee_id        INTEGER NOT NULL
+);
+
+ALTER TABLE remuneration ADD CONSTRAINT remuneration_pk PRIMARY KEY ( transaction_id );
+
+CREATE TABLE role (
+    role_id            INTEGER NOT NULL,
+    role_title         VARCHAR2(20),
+    role_hourly_wage   NUMBER,
+    role_annual_salary NUMBER,
+    role_description   VARCHAR2(1000)
+);
+
+ALTER TABLE role ADD CONSTRAINT role_pk PRIMARY KEY ( role_id );
+
+CREATE TABLE schedule (
+    schedule_id          INTEGER NOT NULL,
+    schedule_employee_id INTEGER NOT NULL,
+    schedule_shift_id       INTEGER NOT NULL,
+    Schedule_Date               DATE NOT NULL,
+    schedule_confirmed            CHAR(1)
+);
+
+ALTER TABLE schedule ADD CONSTRAINT schedule_pk PRIMARY KEY ( schedule_id );
+
+CREATE TABLE shift (
+    shift_id          INTEGER NOT NULL,
+    shift_hours       VARCHAR2(50),
+    shift_optionality CHAR(1),
+    shift_rate        VARCHAR2(10)
+);
+
+ALTER TABLE shift ADD CONSTRAINT shift_pk PRIMARY KEY ( shift_id );
+
+CREATE TABLE species (
+    species_id              INTEGER NOT NULL,
+    species_common_name     VARCHAR2(100),
+    species_scientific_name VARCHAR2(100),
+    species_graminivorous   CHAR(1),
+    species_carnivorous     CHAR(1),
+    species_insectivorous   CHAR(1),
+    species_omnivorous      CHAR(1),
+    species_herbivorous     CHAR(1),
+    species_nectarivorous   CHAR(1),
+    species_description     VARCHAR2(1000)
+);
+
+ALTER TABLE species ADD CONSTRAINT species_pk PRIMARY KEY ( species_id );
+
+CREATE TABLE supplier (
+    supplier_id            INTEGER NOT NULL,
+    supplier_name          VARCHAR2(100),
+    supplier_contact_phone VARCHAR2(10),
+    supplier_contact_email VARCHAR2(40),
+    supplier_contact_name  VARCHAR2(100),
+    supplier_website       VARCHAR2(200),
+    supplier_description   VARCHAR2(1000)
+);
+
+ALTER TABLE supplier ADD CONSTRAINT supplier_pk PRIMARY KEY ( supplier_id );
+
+CREATE TABLE supplies (
+    item_id          INTEGER NOT NULL,
+    item_name        VARCHAR2(100),
+    item_price       NUMBER,
+    item_description VARCHAR2(1000),
+    item_type        VARCHAR2(1),
+    item_expiration  DATE
+);
+
+ALTER TABLE supplies ADD CONSTRAINT supplies_pk PRIMARY KEY ( item_id );
+
+CREATE TABLE supplies_donated (
+    item_id      INTEGER NOT NULL,
+    donor_id     INTEGER NOT NULL,
+    donation_qty INTEGER
+);
+
+ALTER TABLE supplies_donated ADD CONSTRAINT supplies_supplydonation_pk PRIMARY KEY ( item_id,
+                                                                                            donor_id );
+
+CREATE TABLE supply_donation (
+    donor_id             INTEGER NOT NULL,
+    donation_date        DATE,
+    donation_description VARCHAR2(1000)
+);
+
+ALTER TABLE Supply_Donation 
+ADD CONSTRAINT supply_donation_pk 
+PRIMARY KEY (DONOR_ID, DONATION_DATE);
+
+CREATE TABLE transaction (
+    transaction_id     INTEGER NOT NULL,
+    transaction_type   CHAR(1) NOT NULL,
+    transaction_date   DATE,
+    transaction_amount NUMBER
+);
+
+ALTER TABLE transaction ADD CONSTRAINT transaction_pk PRIMARY KEY ( transaction_id );
+
+ALTER TABLE medical_tx
+    ADD CONSTRAINT animal_fk FOREIGN KEY ( tx_animal_id )
+        REFERENCES animal ( animal_id );
+
+ALTER TABLE donation
+    ADD CONSTRAINT donor_fk FOREIGN KEY ( donor_id )
+        REFERENCES donor ( donor_id );
+
+ALTER TABLE supply_donation
+    ADD CONSTRAINT donor_fkv1 FOREIGN KEY ( donor_id )
+        REFERENCES donor ( donor_id );
+
+ALTER TABLE medical_tx
+    ADD CONSTRAINT employee_fk FOREIGN KEY ( tx_employee_id )
+        REFERENCES employee ( employee_id );
+
+ALTER TABLE animal
+    ADD CONSTRAINT employee_fkv1 FOREIGN KEY ( animal_caretaker )
+        REFERENCES employee ( employee_id );
+
+ALTER TABLE remuneration
+    ADD CONSTRAINT employee_fkv2 FOREIGN KEY ( employee_id )
+        REFERENCES employee ( employee_id );
+
+ALTER TABLE employee
+    ADD CONSTRAINT employee_role_fk FOREIGN KEY ( employee_role_id )
+        REFERENCES role ( role_id );
+
+ALTER TABLE enclosure
+    ADD CONSTRAINT enclosure_employee_fk FOREIGN KEY ( enclosure_employee_id )
+        REFERENCES employee ( employee_id );
+
+ALTER TABLE animal
+    ADD CONSTRAINT enclosure_fk FOREIGN KEY ( animal_enclosure_id )
+        REFERENCES enclosure ( enclosure_id );
+
+ALTER TABLE medical_supplies
+    ADD CONSTRAINT medical_tx_fk FOREIGN KEY ( tx_id )
+        REFERENCES medical_tx ( tx_id );
+
+ALTER TABLE Sanctuary_Order
+    ADD CONSTRAINT order_supplier_fk FOREIGN KEY ( order_supplier_id )
+        REFERENCES supplier ( supplier_id );
+
+ALTER TABLE Sanctuary_Order
+    ADD CONSTRAINT order_transaction_fk FOREIGN KEY ( order_transaction_id )
+        REFERENCES transaction ( transaction_id );
+
+ALTER TABLE schedule
+    ADD CONSTRAINT schedule_employee_fk FOREIGN KEY ( schedule_employee_id )
+        REFERENCES employee ( employee_id );
+
+ALTER TABLE schedule
+    ADD CONSTRAINT schedule_shift_fk FOREIGN KEY ( schedule_shift_id )
+        REFERENCES shift ( shift_id );
+
+ALTER TABLE animal
+    ADD CONSTRAINT species_fk FOREIGN KEY ( animal_species_id )
+        REFERENCES species ( species_id );
+
+ALTER TABLE order_line
+    ADD CONSTRAINT stock_order_fk FOREIGN KEY ( order_id )
+        REFERENCES Sanctuary_Order ( order_id );
+
+ALTER TABLE order_line
+    ADD CONSTRAINT stock_supplies_fk FOREIGN KEY ( item_id )
+        REFERENCES supplies ( item_id );
+
+ALTER TABLE supplies_donated
+    ADD CONSTRAINT supplies_fk FOREIGN KEY ( item_id )
+        REFERENCES supplies ( item_id );
+
+ALTER TABLE medical_supplies
+    ADD CONSTRAINT supplies_fkv1 FOREIGN KEY ( item_id )
+        REFERENCES supplies ( item_id );
+
+ALTER TABLE supplies_donated
+    ADD CONSTRAINT supply_donated_fk FOREIGN KEY ( donor_id )
+        REFERENCES Donor ( donor_id );
+
+ALTER TABLE donation
+    ADD CONSTRAINT transaction_fk FOREIGN KEY ( transaction_id )
+        REFERENCES transaction ( transaction_id );
+
+ALTER TABLE remuneration
+    ADD CONSTRAINT transaction_fkv1 FOREIGN KEY ( transaction_id )
+        REFERENCES transaction ( transaction_id );
