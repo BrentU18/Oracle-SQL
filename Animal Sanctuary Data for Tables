@@ -1,0 +1,409 @@
+INSERT INTO SPECIES
+VALUES
+(201, 'Numbat', 'Myrmecobius fasciatus', 'N', 'N', 'Y', 'N', 'N', 'N', 'Solitary: numbats are generally solitary creatures. numbats are diurnal (active during the day), typically feeding in the morning and afternoon.'),
+(202, 'Gouldian Finch', 'Erythrura gouldiae', 'Y', 'N', 'N', 'N', 'Y', 'N', 'Social: Gouldian finches are social birds that live in flocks, especially outside of the breeding season. diurnal (active during the day).'),
+(203, 'Mountain Pygmy-possum', 'Burramys parvus', 'N', 'N', 'N', 'Y', 'N', 'N', 'Solitary: the mountain pygmy-possum is solitary, especially outside of the breeding season. Nocturnal: they are nocturnal, feeding at night.'),
+(204, 'Regent Honeyeater', 'Anthochaera phrygia', 'N', 'N', 'N', 'N', 'N', 'Y', 'Social: regent honeyeaters are social birds, often found in small groups or flocks. diurnal'),
+(205, 'Orange-bellied parrot', 'Neophema chrysogaster', 'Y', 'N', 'N', 'N', 'Y', 'N', 'Social: these parrots are social, typically found in small flocks, especially during migration. diurnal (active during the day).'),
+(206, 'Eastern Quoll', 'Dasyurus viverrinus', 'N', 'Y', 'N', 'N', 'N', 'N', 'Solitary: eastern quolls are generally solitary. Nocturnal: they are nocturnal and typically active at night.'),
+(207, 'Woylie', 'Bettongia penicillata', 'N', 'N', 'N', 'N', 'Y', 'N', 'Solitary: woylies are solitary animals. Nocturnal: they are nocturnal, mostly active at night.'),
+(208, 'Eastern Curlew', 'Numenius madagascariensis', 'N', 'Y', 'N', 'N', 'N', 'N', 'Social: eastern curlews are social, often found in large groups, especially during migration. They are diurnal.'),
+(209, 'Black-flanked Rock-wallaby', 'Petrogale lateralis', 'N', 'N', 'N', 'N', 'Y', 'N', 'Solitary: black-flanked rock-wallabies are generally solitary, although they may form small groups in certain areas. Nocturnal: they are primarily nocturnal, although they can be active during the day in cooler weather.'),
+(210, 'Purple-crowned Fairy-wren', 'Malurus coronatus', 'N', 'N', 'Y', 'N', 'N', 'N', 'Social: these wrens are social, typically found in family groups or small flocks. They are diurnal.');
+
+INSERT INTO "ROLE"
+VALUES
+(701, 'Director', NULL, '145500', 'Oversees all aspects of sanctuary operations, ensuring welfare and protection of animals in care while driving organizational growth and sustainability.'),
+    (702, 'Veterinarian', NULL, '123000', 'Plays a vital role in ensuring animal health and welfare including providing medical assessments, developing treatment plans, performing surgeries, and advising on best practices for rehabilitation.'),
+    (703, 'Groundskeeper', NULL, '91000', 'Ensures sanctuary grounds, facilities, and enclosures are maintained to the highest standard. Includes caring for animal enclosures, maintaining landscaping and infrastructure, and assisting with minor repairs and projects.'),
+    (704, 'Caretaker', NULL, '65000', 'Responsible for daily care of sanctuary animals and property maintenance. Includes feeding, monitoring animal health, cleaning enclosures, and maintaining sanctuary grounds and facilities.'),
+    (705, 'Zoologist', NULL, '108000', 'Studies, monitors, and supports the care and conservation of sanctuary animals. Involves research, data collection, animal behavior observation, and collaboration with the animal care team to enhance welfare and rehabilitation outcomes. Also plays a role in education and outreach programs.'),
+    (706, 'Intern', '30', NULL, 'Supports daily operations, gaining hands-on experience in animal care, conservation practices, and sanctuary management. Will assist with animal care, grounds maintenance, public education, and other sanctuary activities under the supervision of experienced staff.');
+
+Insert INTO EMPLOYEE
+VALUES
+    (601, 701, 'Collin', 'Streep', '20 Avenel Street', 'Melbourne', 'Victoria', 3000, '0370105678', 'streepcollin@numbatnook.com.au'),
+    (602, 702, 'Bronson', 'Wick', '45 Brunswick Street', 'Fitzroy', 'Victoria', 3065, '0380203453', 'wickbronson@numbatnook.com.au'),
+    (603, 702, 'Flora', 'Lake', '15 Flinders Lane', 'Melbourne', 'Victoria', 3000, '0345394850', 'lakeflora@numbatnook.com.au'),
+    (604, 703, 'Dalton', 'Ackman', '100 Acland Street', 'St Kilda', 'Victoria', 3182, '0390235720', 'ackmandalon@numbatnook.com.au'),
+    (605, 703, 'Tori', 'Rad', '12 Toorak Road', 'South Yarra', 'Victoria', 3141, '0312033573', 'radtori@numbatnook.com.au'),
+    (606, 703, 'Sven', 'Goose', '32 Swan Street', 'Richmond', 'Victoria', 3121, '0331210248', 'goosesven@numbatnook.com.au'),
+    (607, 704, 'Noel', 'Smith', '72 Smith Street', 'Fitzroy', 'Victoria', 3065, '0300223481', 'smithnoel@numbatnook.com.au'),
+    (608, 704, 'Charlie', 'Woods', '17 Addison Street', 'Elwood', 'Victoria', 3184, '0344443278', 'woodscharlie@numbatnook.com.au'),
+    (609, 704, 'Matilda', 'Roth', '50 Hotham Street', 'St Kilda East', 'Victoria', 3183, '0316253294', 'rothmatilda@numbatnook.com.au'),
+    (610, 704, 'Albert', 'Wicker', '9 Albion Street', 'Brunswick', 'Victoria', 3056, '0342981274', 'wickeralbert@numbatnook.com.au'),
+    (611, 704, 'Gary', 'Pirhana', '44 Greville Street', 'Prahran', 'Victoria', 3181, '0329347777', 'pirhanagary@numbatnook.com.au'),
+    (612, 704, 'Wendell', 'Matthews', '28 Waverley Road', 'Malvern East', 'Victoria', 3145, '0312363489', 'matthewswendell@numbatnook.com.au'),
+    (613, 704, 'Gemma', 'Cape', '56 St Georges Road', 'Carlton North', 'Victoria', 3054, '0334813847', 'capegemma@numbatnook.com.au'),
+    (614, 704, 'Stone', 'Rivers', '14 Riversdale Road', 'Hawthorn East', 'Victoria', 3123, '0323989934', 'riversstone@numbatnook.com.au'),
+    (615, 704, 'Matt', 'McConny', '22 Macaulay Road', 'North Melbourne', 'Victoria', 3051, '0332403487', 'mcconnymatt@numbatnook.com.au'),
+    (616, 704, 'Billy', 'Bobby', '45 Swanston Street', 'Melbourne', 'Victoria', 3000, '0353237392', 'bobbybilly@numbatnook.com.au'),
+    (617, 705, 'James', 'Rustle', '67 Flinders Lane', 'Melbourne', 'Victoria', 3000, '0324125646', 'rustlejames@numbatnook.com.au'),
+    (618, 705, 'Oliver', 'Johnson', '44 Park Street', 'South Melbourne', 'Victoria', 3205, '0363542342', 'johnsonoliver@numbatnook.com.au'),
+    (619, 706, 'Charlotte', 'White', '27 Clarendon Street', 'Southbank', 'Victoria', 3006, '0398123886', 'whitecharlotte@numbatnook.com.au'),
+    (620, 706, 'Olivia', 'Martin', '50 St. Kilda Road', 'Melbourne', 'Victoria', 3004, '0356731996', 'martinolivia@numbatnook.com.au'),
+    (621, 706, 'Isla', 'Anderson', '31 City Road', 'Southbank', 'Victoria', 3006, '0385349889', 'andersonisla@numbatnook.com.au'),
+    (622, 706, 'Henry', 'White', '234 Bourke Street', 'Melbourne', 'Victoria', 3000, '0367563425', 'whitehenry@numbatnook.com.au');
+
+INSERT Into ENCLOSURE
+VALUES
+ (301, 604, 1750, 'Under Construction', 
+        'Housed in a spacious enclosure in a wildlife reserve or sanctuary where it can roam and forage in a natural environment. NOTE: Under construction and supervised by Employee ID: 604', 
+        TO_DATE('11/22/2024', 'MM/DD/YYYY'), TO_DATE('11/14/2024', 'MM/DD/YYYY')),
+    (302, 605, 2500, 'Operational', 
+        'Housed in a spacious enclosure in a wildlife reserve or sanctuary where it can roam, socially interact, and forage in a natural environment.', 
+        TO_DATE('11/15/2024', 'MM/DD/YYYY'), TO_DATE('11/15/2024', 'MM/DD/YYYY')),
+    (303, 606, 1250, 'Operational', 
+        'Housed in a spacious enclosure in a wildlife conservation area to mimic its natural mountain habitat.', 
+        TO_DATE('11/17/2024', 'MM/DD/YYYY'), TO_DATE('11/15/2024', 'MM/DD/YYYY')),
+    (304, 605, 750, 'Operational', 
+        'Housed in a spacious aviary to allow for flight and natural behaviors, often in conservation programs.', 
+        TO_DATE('11/16/2024', 'MM/DD/YYYY'), TO_DATE('11/16/2024', 'MM/DD/YYYY')),
+    (305, 604, 1500, 'Under Construction', 
+        'Kept in a spacious aviary or enclosure for conservation and breeding purposes. NOTE: Under construction and supervised by Employee ID: 604', 
+        TO_DATE('11/15/2024', 'MM/DD/YYYY'), TO_DATE('11/17/2024', 'MM/DD/YYYY')),
+    (306, 606, 1250, 'Operational', 
+        'Needs space to roam, so it would be housed in a spacious enclosure or high-fenced enclosure in a wildlife sanctuary or rehabilitation center.', 
+        TO_DATE('11/20/2024', 'MM/DD/YYYY'), TO_DATE('11/18/2024', 'MM/DD/YYYY')),
+    (307, 604, 1500, 'Under Construction', 
+        'Housed in a spacious enclosure in a wildlife sanctuary or breeding program. NOTE: Under construction and supervised by Employee ID: 604', 
+        TO_DATE('11/21/2024', 'MM/DD/YYYY'), TO_DATE('11/19/2024', 'MM/DD/YYYY')),
+    (308, 605, 2000, 'Operational', 
+        'Housed in a spacious aviary or large enclosure, especially in conservation or educational settings.', 
+        TO_DATE('11/21/2024', 'MM/DD/YYYY'), TO_DATE('11/20/2024', 'MM/DD/YYYY')),
+    (309, 606, 2000, 'Operational', 
+        'Needs a spacious, rocky enclosure to mimic its natural habitat.', 
+        TO_DATE('11/22/2024', 'MM/DD/YYYY'), TO_DATE('11/21/2024', 'MM/DD/YYYY')),
+    (310, 605, 1500, 'Operational', 
+        'Housed in a spacious aviary where it can fly, interact with other birds, and exhibit natural behaviors.', 
+        TO_DATE('11/17/2024', 'MM/DD/YYYY'), TO_DATE('11/22/2024', 'MM/DD/YYYY'));
+
+INSERT INTO ANIMAL
+VALUES
+(101, 201, 301, 607, 'NumbatNibbles', 'F', TO_DATE('10/12/2019', 'MM/DD/YYYY'), 'Insectivorous', 'Dryandra Woodland'),
+    (102, 202, 302, 608, 'GouldyMcSquawk', 'F', TO_DATE('07/19/2019', 'MM/DD/YYYY'), 'Herbivores', 'Pine Creek'),
+    (103, 203, 303, 609, 'TinyPossumPal', 'F', TO_DATE('08/21/2020', 'MM/DD/YYYY'), 'Omnivorous', 'Mount Bogong'),
+    (104, 204, 304, 610, 'HoneyRegent', 'M', TO_DATE('01/17/2014', 'MM/DD/YYYY'), 'Nectarivorous', 'Hunter Valley'),
+    (105, 205, 305, 611, 'OrangeSquawk', 'F', TO_DATE('04/10/2016', 'MM/DD/YYYY'), 'Herbivores', 'Gippsland Lakes'),
+    (106, 206, 306, 612, 'Quollinator', 'M', TO_DATE('11/08/2022', 'MM/DD/YYYY'), 'Carnivorous', 'Tasmania'),
+    (107, 207, 307, 613, 'WoylieWiggles', 'F', TO_DATE('02/15/2020', 'MM/DD/YYYY'), 'Herbivores', 'Dryandra Woodland'),
+    (108, 208, 308, 614, 'CurlyCurlew', 'M', TO_DATE('03/22/2009', 'MM/DD/YYYY'), 'Carnivorous', 'Moreton Bay'),
+    (109, 209, 309, 615, 'BlackyRock', 'M', TO_DATE('05/24/2017', 'MM/DD/YYYY'), 'Herbivores', 'Flinders Ranges'),
+    (110, 210, 310, 616, 'FairyWrenzy', 'F', TO_DATE('06/13/2023', 'MM/DD/YYYY'), 'Insectivorous', 'Victoria River District'),
+    (112, 207, 307, 613, 'WiggleWoylie', 'M', TO_DATE('12/19/2020', 'MM/DD/YYYY'), 'Herbivores', 'Dryandra Woodland'),
+    (113, 208, 308, 614, 'SocialCurlew', 'F', TO_DATE('09/20/2009', 'MM/DD/YYYY'), 'Carnivorous', 'Moreton Bay'),
+    (114, 209, 309, 615, 'RockyWallaby', 'F', TO_DATE('02/24/2017', 'MM/DD/YYYY'), 'Herbivores', 'Flinders Ranges'),
+    (115, 210, 310, 616, 'FlappyFairy', 'M', TO_DATE('06/13/2023', 'MM/DD/YYYY'), 'Insectivorous', 'Victoria River District'),
+    (116, 204, 304, 610, 'RegentBuzz', 'F', TO_DATE('01/17/2014', 'MM/DD/YYYY'), 'Nectarivorous', 'Hunter Valley'),
+    (117, 205, 305, 611, 'OrangePeep', 'M', TO_DATE('01/04/2016', 'MM/DD/YYYY'), 'Herbivores', 'Gippsland Lakes'),
+    (118, 202, 302, 608, 'FinchFrenzy', 'M', TO_DATE('06/13/2019', 'MM/DD/YYYY'), 'Herbivores', 'Pine Creek'),
+    (119, 205, 305, 611, 'ParrotPop', 'M', TO_DATE('06/09/2016', 'MM/DD/YYYY'), 'Herbivores', 'Gippsland Lakes'),
+    (120, 207, 307, 613, 'WoylieSnug', 'F', TO_DATE('12/08/2020', 'MM/DD/YYYY'), 'Herbivores', 'Dryandra Woodland');
+
+INSERT INTO Supplier 
+VALUES
+(900, 'Australian WildLife Supplies', '0417749501', 'info@wildlifesupplies.com.au', 'Eric Cartman', 'https://www.wildlifesupplies.com.au/', 'They offer a wide range of supplies for wildlife carers, including food, cages, medical supplies, and other rehabilitation tools specifically for native animals such as kangaroos, koalas, and wombats.'),
+(901, 'Pet City Mt Gravatt', '733492086', 'customerservice@petcity.com.au', 'Kenny McCormick', 'https://www.petcity.com.au/', 'Pet City Mt Gravatt is a pet store that specializes in providing products and services for a variety of pets, including dogs, cats, birds, fish, reptiles, and small mammals. Their offerings include pet food, pet accessories (toys, bedding, grooming).'),
+(902, 'Lafeber Company', '8158884040', 'vetinfo@lafeber.com', 'Kyle Broflovski', 'https://lafeber.com/vet/shop/', 'Lafeber Veterinary Care focuses on providing specialized nutrition and care products for veterinarians who treat exotic animals, particularly birds and small mammals. Their offerings include therapeutic diets, recovery foods, supplements, and hydration solutions, all designed to support the health and well-being of exotic pets in a veterinary setting. They also offer resources to exotic veterinary resources and information.'),
+(903, 'Bunnings Warehouse', '0388319777', NULL, 'Stan Marsh', 'https://www.bunnings.com.au/', 'While not exclusively focused on animals, they provide a wide variety of pet products, including pet food, pet accessories, and outdoor pet enclosures. They offer products for dogs, cats, birds, and small animals, as well as pet care items like bedding, cages, and grooming supplies. Additionally, Bunnings may offer products for building or maintaining animal habitats (e.g., chicken coops, aquariums, etc.).');
+
+INSERT INTO SUPPLIES
+VALUES
+(401, 'Fencing', 10, 'Enclosures/Fencing  Strong, secure barriers (often high fences or mesh) to contain animals and provide safe habitats. Sold in rolls (e.g., 15m, 30m, 50m, 100m, or 200m).', NULL, TO_DATE('2034-03-01', 'YYYY-MM-DD')),
+(402, 'Vitamins', 50, 'Nutritional Supplements  Special food supplements (vitamins, minerals, etc.) to ensure animals are receiving all necessary nutrients. 1 bottle, usually containing 30 to 100 tablets or doses.', NULL, TO_DATE('2026-06-01', 'YYYY-MM-DD')),
+(403, 'First Aid Kits (Humans)', NULL, 'First Aid Kits  For immediate treatment of injuries or illnesses in the sanctuary. 1 complete kit, typically containing 100+ pieces (bandages, antiseptic wipes, gauze, etc.).', NULL, TO_DATE('2026-10-01', 'YYYY-MM-DD')),
+(404, 'RFID/ GPS Collars', 120, 'Animal Tracking Collars  GPS or RFID collars to monitor the movements of animals, especially in larger sanctuaries. 1 to 10 units per animal (depending on how many animals need to be tracked).', NULL, TO_DATE('2028-04-01', 'YYYY-MM-DD')),
+(405, 'Fence Posts and Wire Mesh Pack', 110, 'Fence Posts and Wire Mesh  For constructing or repairing enclosures, ensuring they are secure and safe. Fence posts: Usually sold in packs of 10 to 50 posts. Wire mesh: Typically sold in rolls of 50m, 100m, or 200m.', NULL, TO_DATE('2034-03-01', 'YYYY-MM-DD')),
+(406, 'Animal ID Tags', 15, 'Animal Identification Tags  Tags, microchips, or bands used for identifying individual animals. Typically sold in packs of 10 to 50 tags (personalized or blank).', NULL, TO_DATE('2029-04-01', 'YYYY-MM-DD')),
+(407, 'Cleaning Supplies Kit', 100, 'Cleaning Supplies  Disinfectants, scrub brushes, and tools for cleaning animal enclosures and feeding areas to maintain hygiene. Quantity: 1 to 5 kits, which include cleaning solutions, mops, sponges, gloves, and sanitizing agents.', NULL, TO_DATE('2026-09-01', 'YYYY-MM-DD')),
+(408, 'Veterinary Scales', 500, 'Veterinary Scales  Weighing scales to monitor the health and growth of animals in the sanctuary. 1 set (designed for accurate weight measurements of animals).', 'M', TO_DATE('2027-08-01', 'YYYY-MM-DD')),
+(409, 'Feeding Cage', 150, 'Feeding Cages or Containers  Used to provide food in a controlled manner or encourage animals to forage and engage in natural behavior. 1 to 5 cages, depending on the number and size of animals.', NULL, TO_DATE('2034-03-01', 'YYYY-MM-DD')),
+(410, 'Perches', 25, 'Perches  Used for birds to rest, sleep, and display natural behaviors (e.g., branches or man-made perches in aviaries). 1 to 5 per animal or enclosure (for birds or small animals).', NULL, TO_DATE('2025-12-01', 'YYYY-MM-DD')),
+(411, 'Water Troughs', 150, 'Water Troughs or Ponds  Containers for drinking water or for aquatic species to swim in (essential for birds and mammals). 1 to 10 troughs, depending on the number of animals.', NULL, TO_DATE('2025-11-01', 'YYYY-MM-DD')),
+(412, 'Climbing Structures', 350, 'Climbing Structures  Equipment for animals (particularly primates, birds, and some marsupials) to climb, exercise, and explore. 1 to 5, depending on the type of animal (e.g., for cats, small mammals, or birds).', NULL, TO_DATE('2027-03-01', 'YYYY-MM-DD')),
+(413, 'Feeding Station', 100, 'Feeding Stations  Designated areas where food is provided to animals, often designed to encourage foraging. 1 to 5 stations, depending on animal groups or species.', NULL, TO_DATE('2025-07-01', 'YYYY-MM-DD')),
+(414, 'Food Bowls', 20, 'Food and Water Bowls  Standard bowls for feeding and hydration. 1 to 10 bowls per animal (depending on the number of animals).', NULL, TO_DATE('2025-09-01', 'YYYY-MM-DD')),
+(415, 'Medical Kits (Animals)', 200, 'Medical Kits  Veterinary supplies to treat injured or ill animals, including medications, syringes, bandages, and thermometers. 1 kit, usually including bandages, antiseptic, syringes, etc.', 'M', TO_DATE('2026-08-01', 'YYYY-MM-DD')),
+(416, 'Thermometers and Hygrometers', 100, 'Thermometers and Hygrometers  Used to monitor temperature and humidity levels, ensuring a comfortable environment for animals. 1 to 3 devices, depending on the size of the facility.', 'M', TO_DATE('2027-07-01', 'YYYY-MM-DD')),
+(417, 'Straw, Hay, and Wood shaving', 30, 'Bedding  Soft materials like straw, hay, or wood shavings to line enclosures for comfort and hygiene. Typically sold in bales or large bags. Quantities may vary from 1 to 10 bales or bags.', NULL, TO_DATE('2025-07-01', 'YYYY-MM-DD')),
+(418, 'Enrichment Toys', 30, 'Enrichment Toys  Objects such as puzzle feeders, ropes, balls, and chew toys that encourage natural behaviors and reduce stress. 1 to 5 toys per animal, depending on species and activity needs.', NULL, TO_DATE('2027-08-01', 'YYYY-MM-DD')),
+(419, 'Nest Boxes', 50, 'Nest Boxes  Enclosures provided for animals (especially birds) to nest and raise young. 1 to 5 boxes per animal (for birds, small mammals, etc.).', NULL, TO_DATE('2026-08-01', 'YYYY-MM-DD')),
+(420, 'Shade Structures', 100, 'Shade Structures  Shade shelters for animals to protect them from extreme weather (sun, rain, etc.). 1 to 5 structures per area or enclosure.', NULL, TO_DATE('2026-02-01', 'YYYY-MM-DD')),
+(421, 'Syringes', 20, 'Essential for administering medications or vaccinations. Different gauge sizes are used based on the type of animal.', 'M', TO_DATE('2027-08-01', 'YYYY-MM-DD')),
+(422, 'Liquid Suture', 45, 'Quick-dry liquid to close wounds.', 'M', TO_DATE('2024-02-01', 'YYYY-MM-DD')),
+(423, 'Otoscope disposable ear tips', 10, 'Disposable tips: For examining animal ears.', 'M', TO_DATE('2026-09-01', 'YYYY-MM-DD')),
+(424, 'Isoflurane', 150, 'For anesthetizing animals.', 'M', TO_DATE('2026-01-01', 'YYYY-MM-DD')),
+(425, 'Saline Solution', 20, 'For preparing solutions and rehydrating animals via subcutaneous injections.', 'M', TO_DATE('2026-11-01', 'YYYY-MM-DD')),
+(426, 'Suture kit', 100, 'For closing wounds.', 'M', TO_DATE('2027-04-01', 'YYYY-MM-DD')),
+(427, 'Scalpel Blade (Disposable)', 5, 'For incisions.', 'M', TO_DATE('2026-05-01', 'YYYY-MM-DD')),
+(428, 'Wound Spray', 30, 'To disinfect and alleviate pain of open wounds.', 'M', TO_DATE('2028-06-01', 'YYYY-MM-DD')),
+(429, 'Amoxicillin', 50, 'Antibiotic', 'M', TO_DATE('2026-10-01', 'YYYY-MM-DD')),
+(430, 'Clindamycin', 60, 'Antibiotic', 'M', TO_DATE('2027-04-01', 'YYYY-MM-DD')),
+(431, 'Doxycycline', 50, 'Antibiotic', 'M', TO_DATE('2027-03-01', 'YYYY-MM-DD')),
+(432, 'Enrofloxacin', 50, 'Antibiotic', 'M', TO_DATE('2027-01-01', 'YYYY-MM-DD')),
+(433, 'Gabapentin', 50, 'Pain-reliever', 'M', TO_DATE('2027-06-01', 'YYYY-MM-DD')),
+(434, 'Buprenorphine', 50, 'Pain-reliever', 'M', TO_DATE('2027-08-01', 'YYYY-MM-DD')),
+(435, 'Meloxicam', 60, 'Pain-reliever', 'M', TO_DATE('2027-07-01', 'YYYY-MM-DD')),
+(436, 'Carprofen', 60, 'Pain-reliever', 'M', TO_DATE('2027-02-01', 'YYYY-MM-DD')),
+(437, 'Paracetamol', 20, 'Pain-reliever', 'M', TO_DATE('2026-12-01', 'YYYY-MM-DD')),
+(438, 'Hydrocodone', 80, 'Cough suppressant', 'M', TO_DATE('2027-09-01', 'YYYY-MM-DD')),
+(439, 'Albuterol', 50, 'For breathing issues', 'M', TO_DATE('2026-10-01', 'YYYY-MM-DD')),
+(440, 'Cough Syrup', 25, 'For respiratory health', 'M', TO_DATE('2027-12-01', 'YYYY-MM-DD'));
+
+INSERT INTO DONOR
+VALUES
+(801, 'Nature Conservancy', 1300628686, 'conservationchampion@tnc.org', 'Monthly Gifts, Conservation Champion and Donation Enquiries', 'https://www.natureaustralia.org.au/'),
+(802, 'Ian Potter Foundation', 1300628686, NULL, 'Supports conservation and biodiversity projects across Australia, including funding for wildlife sanctuaries.', 'https://www.ianpotter.org.au/'),
+(803, 'Sidney Myer Fund & Myer Foundation', 386093150, 'admin@myerfoundation.org.au', 'Funding environmental and wildlife conservation initiatives.', 'https://www.myerfoundation.org.au/'),
+(804, 'John T Reid Charitable Trusts', 398749667, 'office@johntreidtrusts.com.au', 'Grants to support wildlife rescue organizations', 'https://www.johntreidtrusts.com.au/'),
+(805, 'Steve Irwin Conservation Foundation and Australia Zoo', 754362026, 'info@wildlifewarriors.org.au', 'Supported wildlife sanctuaries, particularly in the wake of natural disasters, as well as ongoing conservation programs.', 'https://wildlifewarriors.org.au/');
+
+INSERT INTO MEDICAL_TX
+VALUES
+(501, 101, 602, TO_DATE('12/11/2024', 'MM/DD/YYYY'), TO_DATE('12/11/2024', 'MM/DD/YYYY'), 'After a numbat fight over a particularly tasty termite mound, the numbat was anesthetized with 2% isoflurane via a face mask, which it reluctantly accepted after some encouragement with a treat. Once the numbat was comfortably asleep, the vet used a suture kit with a fine absorbable suture to close a small wound on its forelimb. The wound was cleaned with a mild antiseptic (chlorhexidine) to prevent infection, and the numbat was given a single dose of meloxicam (0.1 mg/kg) for pain relief before waking up in a cozy recovery box lined with eucalyptus leaves.'),
+(502, 106, 602, TO_DATE('10/31/2024', 'MM/DD/YYYY'), TO_DATE('10/31/2024', 'MM/DD/YYYY'), 'A curious eastern quoll decided to nibble on something sharp, resulting in a cut to its tongue. The little quoll was sedated with an injection of dexmedetomidine (0.01 mg/kg) to keep it calm while the injury was examined. The vet used some saline solution to flush out the wound and applied a gentle antiseptic spray. To help with the pain, the quoll was given a dose of buprenorphine (0.02 mg/kg) which made it feel much better. Afterward, the quoll was given soft, tasty meals of mashed insects and fruit for a few days until its tongue was fully healed.'),
+(503, 116, 603, TO_DATE('10/25/2024', 'MM/DD/YYYY'), TO_DATE('11/11/2024', 'MM/DD/YYYY'), 'After a particularly boisterous flying practice, a regent honeyeater was brought in with a wing sprain. The vet carefully restrained the honeyeater with a soft towel and administered a small dose of midazolam (0.2 mg/kg) to keep the bird calm. A splint made of padded craft sticks was gently applied to stabilize the wing, using some soft bandaging to keep everything in place. The bird received a bit of meloxicam (0.2 mg/kg) for pain and inflammation, and was placed in a small aviary to limit flight and allow its wing to rest. The honeyeater was spoiled with nectar and berries while it healed.'),
+(504, 114, 603, TO_DATE('10/01/2024', 'MM/DD/YYYY'), TO_DATE('10/08/2024', 'MM/DD/YYYY'), 'A black-flanked rock-wallaby had a small but painful abscess on its hind leg after scraping it against a rock ledge. The wallaby was anesthetized with a combination of ketamine (5 mg/kg) and midazolam (0.2 mg/kg) for the procedure. The vet carefully lanced the abscess, drained the pus, and flushed the area with an antiseptic solution. The wallaby was given a course of oral amoxicillin (15 mg/kg) to prevent any further infection and a single injection of meloxicam (0.05 mg/kg) for pain. Once awake, the wallaby was provided with extra greens and a warm place to rest, where it happily hopped back to its companions after recovery.');
+
+INSERT INTO Transaction (TRANSACTION_ID, TRANSACTION_TYPE, TRANSACTION_DATE, TRANSACTION_AMOUNT)
+VALUES 
+(1000, 'E', TO_DATE('2024-10-15', 'YYYY-MM-DD'), 200), -- Order (E), Amount 200
+(1001, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 5596.15), -- Renumeration (R), Director (ID 701)
+(1002, 'D', TO_DATE('2024-10-25', 'YYYY-MM-DD'), 500), -- Donation (D), Amount 500
+(1003, 'E', TO_DATE('2024-10-30', 'YYYY-MM-DD'), 275), -- Order (E), Amount 275
+(1004, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 4730.77), -- Renumeration (R), Vet (ID 702) 1
+(1005, 'D', TO_DATE('2024-11-05', 'YYYY-MM-DD'), NULL), -- Donation (D), No Amount
+(1006, 'E', TO_DATE('2024-11-10', 'YYYY-MM-DD'), 300), -- Order (E), Amount 300
+(1007, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 4730.77), -- Renumeration (R), Vet (ID 702) 2
+(1008, 'D', TO_DATE('2024-11-15', 'YYYY-MM-DD'), 200), -- Donation (D), Amount 200
+(1009, 'E', TO_DATE('2024-11-20', 'YYYY-MM-DD'), 350), -- Order (E), Amount 350
+(1010, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 3500), -- Renumeration (R), Groundskeeper (ID 703) 1
+(1011, 'D', TO_DATE('2024-11-25', 'YYYY-MM-DD'), 1000), -- Donation (D), Amount 1000
+(1012, 'E', TO_DATE('2024-11-30', 'YYYY-MM-DD'), 225), -- Order (E), Amount 225
+(1013, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 3500), -- Renumeration (R), Groundskeeper (ID 703) 2
+(1014, 'D', TO_DATE('2024-12-05', 'YYYY-MM-DD'), NULL), -- Donation (D), No Amount
+(1015, 'E', TO_DATE('2024-12-10', 'YYYY-MM-DD'), 400), -- Order (E), Amount 400
+(1016, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 3500), -- Renumeration (R), Groundskeeper (ID 703) 3
+(1017, 'D', TO_DATE('2024-12-15', 'YYYY-MM-DD'), 150), -- Donation (D), Amount 150
+(1018, 'E', TO_DATE('2024-12-20', 'YYYY-MM-DD'), 500), -- Order (E), Amount 500
+(1019, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2500), -- Renumeration (R), Caretaker (ID 704) 1
+(1020, 'D', TO_DATE('2024-12-25', 'YYYY-MM-DD'), NULL), -- Donation (D), No Amount
+(1021, 'E', TO_DATE('2024-12-30', 'YYYY-MM-DD'), 550), -- Order (E), Amount 550
+(1022, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2500), -- Renumeration (R), Caretaker (ID 704) 2
+(1023, 'D', TO_DATE('2025-01-05', 'YYYY-MM-DD'), 300), -- Donation (D), Amount 300
+(1024, 'E', TO_DATE('2025-01-10', 'YYYY-MM-DD'), 600), -- Order (E), Amount 600
+(1025, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2500), -- Renumeration (R), Caretaker (ID 704) 3
+(1026, 'D', TO_DATE('2025-01-15', 'YYYY-MM-DD'), NULL), -- Donation (D), No Amount
+(1027, 'E', TO_DATE('2025-01-20', 'YYYY-MM-DD'), 650), -- Order (E), Amount 650
+(1028, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2500), -- Renumeration (R), Caretaker (ID 704) 4
+(1029, 'D', TO_DATE('2025-01-25', 'YYYY-MM-DD'), 1200), -- Donation (D), Amount 1200
+(1030, 'E', TO_DATE('2025-02-01', 'YYYY-MM-DD'), 700), -- Order (E), Amount 700
+(1031, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2400), -- Renumeration (R), Intern (ID 706) 1
+(1032, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2400), -- Renumeration (R), Intern (ID 706) 2
+(1033, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2400), -- Renumeration (R), Intern (ID 706) 3
+(1034, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2400), -- Renumeration (R), Intern (ID 706) 4
+(1035, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2500), -- Renumeration (R), Groundskeeper (ID 704)
+(1036, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2500); -- Renumeration (R), Groundskeeper (ID 704)
+
+INSERT INTO REMUNERATION 
+VALUES
+(1001, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 5596.15, 601), -- Director (ID 701)
+(1004, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 4730.77, 602), -- Vet (ID 702) 1
+(1007, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 4730.77, 603), -- Vet (ID 702) 2
+(1010, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 3500, 604), -- Groundskeeper (ID 703) 1
+(1013, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 3500, 605), -- Groundskeeper (ID 703) 2
+(1016, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 3500, 606), -- Groundskeeper (ID 703) 3
+(1019, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2500, 607), -- Caretaker (ID 704) 1
+(1022, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2500, 608), -- Caretaker (ID 704) 2
+(1025, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2500, 609), -- Caretaker (ID 704) 3
+(1028, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2500, 610), -- Caretaker (ID 704) 4
+(1031, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2400, 619), -- Intern (ID 706) 1
+(1032, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2400, 620), -- Intern (ID 707) 2
+(1033, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2400, 621), -- Intern (ID 708) 3
+(1034, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2400, 622), -- Intern (ID 709) 4
+(1035, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2500, 611), -- Groundskeeper (ID 704)
+(1036, 'R', TO_DATE('2024-10-20', 'YYYY-MM-DD'), 2500, 612); -- Groundskeeper (ID 704)
+
+INSERT INTO Donation 
+VALUES
+(1002, 'D', TO_DATE('2024-10-25', 'YYYY-MM-DD'), 500, 801), -- Donation with amount, Donor ID 801
+(1005, 'D', TO_DATE('2024-11-05', 'YYYY-MM-DD'), NULL, 802), -- Donation with no amount, Donor ID 802
+(1008, 'D', TO_DATE('2024-11-15', 'YYYY-MM-DD'), 200, 803), -- Donation with amount, Donor ID 803
+(1011, 'D', TO_DATE('2024-11-25', 'YYYY-MM-DD'), 1000, 804), -- Donation with amount, Donor ID 804
+(1014, 'D', TO_DATE('2024-12-05', 'YYYY-MM-DD'), NULL, 805), -- Donation with no amount, Donor ID 805
+(1017, 'D', TO_DATE('2024-12-15', 'YYYY-MM-DD'), 150, 801), -- Donation with amount, Donor ID 801
+(1020, 'D', TO_DATE('2024-12-25', 'YYYY-MM-DD'), NULL, 802), -- Donation with no amount, Donor ID 802
+(1023, 'D', TO_DATE('2025-01-05', 'YYYY-MM-DD'), 300, 803), -- Donation with amount, Donor ID 803
+(1026, 'D', TO_DATE('2025-01-15', 'YYYY-MM-DD'), NULL, 804), -- Donation with no amount, Donor ID 804
+(1029, 'D', TO_DATE('2025-01-25', 'YYYY-MM-DD'), 1200, 805); -- Donation with amount, Donor ID 805
+
+INSERT INTO Supply_Donation 
+VALUES
+(802, TO_DATE('2024-11-05', 'YYYY-MM-DD'), 'Donation of essential supplies for animal care'),
+(805, TO_DATE('2024-12-05', 'YYYY-MM-DD'), 'Donation of specialized equipment for zoo habitats'),
+(802, TO_DATE('2024-12-25', 'YYYY-MM-DD'), 'Holiday donation of general supplies for the zoo'),
+(804, TO_DATE('2025-01-15', 'YYYY-MM-DD'), 'Donation of enrichment items for animal welfare');
+
+INSERT INTO Supplies_Donated (ITEM_ID, DONOR_ID, DONATION_QTY) 
+VALUES 
+(422, 802, 50), -- Item donated by Donor 802
+(423, 805, 30), -- Item donated by Donor 805
+(425, 802, 20), -- Item donated by Donor 802
+(429, 804, 40);
+
+INSERT INTO Shift (SHIFT_ID, SHIFT_HOURS, SHIFT_OPTIONALITY, SHIFT_RATE)
+VALUES
+(3000, '9 AM - 5 PM', 'N', 'Salaried'),  -- Morning shift, 9 AM to 5 PM, salaried
+(3001, '3 PM - 11 PM', 'N', 'Salaried'),  -- Afternoon shift, 3 PM to 11 PM, salaried
+(3002, '10 PM - 6 AM', 'Y', 'Salaried'),  -- Night shift, 10 PM to 6 AM, salaried
+(3003, '9 AM - 5 PM', 'N', 'Hourly'),  -- Morning shift for hourly employees, 9 AM to 5 PM
+(3004, '3 PM - 11 PM', 'N', 'Hourly'),  -- Afternoon shift for hourly employees, 3 PM to 11 PM
+(3005, '10 PM - 6 AM', 'Y', 'Hourly');  -- Night shift for hourly employees, 10 PM to 6 AM
+
+INSERT INTO SCHEDULE VALUES
+(4000, 602, 3000, TO_DATE('10/06/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4001, 602, 3000, TO_DATE('10/07/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4002, 602, 3000, TO_DATE('10/08/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4003, 602, 3000, TO_DATE('10/09/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4004, 602, 3000, TO_DATE('10/10/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4005, 602, 3000, TO_DATE('10/13/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4006, 602, 3000, TO_DATE('10/14/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4007, 602, 3000, TO_DATE('10/15/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4008, 602, 3000, TO_DATE('10/16/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4009, 602, 3000, TO_DATE('10/17/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4010, 602, 3000, TO_DATE('10/20/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4011, 602, 3000, TO_DATE('10/21/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4012, 602, 3000, TO_DATE('10/22/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4013, 602, 3000, TO_DATE('10/23/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4014, 602, 3000, TO_DATE('10/24/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4015, 602, 3000, TO_DATE('10/27/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4016, 602, 3000, TO_DATE('10/28/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4017, 602, 3000, TO_DATE('10/29/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4018, 602, 3000, TO_DATE('10/30/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4019, 602, 3000, TO_DATE('10/31/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4020, 602, 3000, TO_DATE('11/03/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4021, 602, 3000, TO_DATE('11/04/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4022, 602, 3000, TO_DATE('11/05/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4023, 602, 3000, TO_DATE('11/06/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4024, 602, 3000, TO_DATE('11/07/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4025, 602, 3000, TO_DATE('11/10/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4026, 602, 3000, TO_DATE('11/11/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4027, 602, 3000, TO_DATE('11/12/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4028, 602, 3000, TO_DATE('11/13/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4029, 602, 3000, TO_DATE('11/14/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4030, 602, 3000, TO_DATE('11/17/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4031, 602, 3000, TO_DATE('11/18/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4032, 602, 3000, TO_DATE('11/19/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4033, 602, 3000, TO_DATE('11/20/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4034, 602, 3000, TO_DATE('11/21/2024', 'MM/DD/YYYY'), 'Y'),  -- Bronson (Director) on Morning shift
+(4035, 602, 3000, TO_DATE('11/22/2024', 'MM/DD/YYYY'), 'Y');
+
+INSERT INTO SCHEDULE VALUES
+(4100, 604, 3001, TO_DATE('10/06/2024', 'MM/DD/YYYY'), 'Y'),  -- Dalton (Groundskeeper) on Morning shift
+(4101, 605, 3001, TO_DATE('10/07/2024', 'MM/DD/YYYY'), 'Y'),  -- Tori (Groundskeeper) on Morning shift
+(4102, 606, 3001, TO_DATE('10/08/2024', 'MM/DD/YYYY'), 'Y'),  -- Sven (Groundskeeper) on Morning shift
+(4103, 607, 3001, TO_DATE('10/09/2024', 'MM/DD/YYYY'), 'Y'),  -- Noel (Groundskeeper) on Morning shift
+(4104, 608, 3001, TO_DATE('10/10/2024', 'MM/DD/YYYY'), 'Y'),  -- Charlie (Groundskeeper) on Morning shift
+(4105, 609, 3001, TO_DATE('10/11/2024', 'MM/DD/YYYY'), 'Y'),  -- Matilda (Groundskeeper) on Morning shift
+(4106, 610, 3001, TO_DATE('10/12/2024', 'MM/DD/YYYY'), 'Y'),  -- Albert (Groundskeeper) on Morning shift
+(4107, 611, 3001, TO_DATE('10/13/2024', 'MM/DD/YYYY'), 'Y'),  -- Gary (Groundskeeper) on Morning shift
+(4108, 612, 3001, TO_DATE('10/14/2024', 'MM/DD/YYYY'), 'Y'),  -- Wendell (Groundskeeper) on Morning shift
+(4109, 613, 3001, TO_DATE('10/15/2024', 'MM/DD/YYYY'), 'Y'),  -- Gemma (Groundskeeper) on Morning shift
+(4110, 614, 3001, TO_DATE('10/16/2024', 'MM/DD/YYYY'), 'Y'),  -- Stone (Groundskeeper) on Morning shift
+(4111, 615, 3001, TO_DATE('10/17/2024', 'MM/DD/YYYY'), 'Y'),  -- Matt (Groundskeeper) on Morning shift
+(4112, 616, 3001, TO_DATE('10/18/2024', 'MM/DD/YYYY'), 'Y'),  -- Billy (Groundskeeper) on Morning shift
+(4113, 617, 3001, TO_DATE('10/19/2024', 'MM/DD/YYYY'), 'Y'),  -- James (Groundskeeper) on Morning shift
+(4114, 618, 3001, TO_DATE('10/20/2024', 'MM/DD/YYYY'), 'Y'),  -- Oliver (Groundskeeper) on Morning shift
+(4115, 619, 3001, TO_DATE('10/21/2024', 'MM/DD/YYYY'), 'Y'),  -- Charlotte (Groundskeeper) on Morning shift
+(4116, 620, 3001, TO_DATE('10/22/2024', 'MM/DD/YYYY'), 'Y'),  -- Olivia (Groundskeeper) on Morning shift
+(4117, 621, 3001, TO_DATE('10/23/2024', 'MM/DD/YYYY'), 'Y'),  -- Isla (Groundskeeper) on Morning shift
+(4118, 622, 3001, TO_DATE('10/24/2024', 'MM/DD/YYYY'), 'Y'),  -- Henry (Groundskeeper) on Morning shift
+(4119, 604, 3001, TO_DATE('10/13/2024', 'MM/DD/YYYY'), 'Y'),  -- Dalton (Groundskeeper) on Morning shift
+(4120, 605, 3001, TO_DATE('10/14/2024', 'MM/DD/YYYY'), 'Y'),  -- Tori (Groundskeeper) on Morning shift
+(4121, 606, 3001, TO_DATE('10/15/2024', 'MM/DD/YYYY'), 'Y'),  -- Sven (Groundskeeper) on Morning shift
+(4122, 607, 3001, TO_DATE('10/16/2024', 'MM/DD/YYYY'), 'Y'),  -- Noel (Groundskeeper) on Morning shift
+(4123, 608, 3001, TO_DATE('10/17/2024', 'MM/DD/YYYY'), 'Y'),  -- Charlie (Groundskeeper) on Morning shift
+(4124, 609, 3001, TO_DATE('10/18/2024', 'MM/DD/YYYY'), 'Y'),  -- Matilda (Groundskeeper) on Morning shift
+(4125, 610, 3001, TO_DATE('10/19/2024', 'MM/DD/YYYY'), 'Y'),  -- Albert (Groundskeeper) on Morning shift
+(4126, 611, 3001, TO_DATE('10/20/2024', 'MM/DD/YYYY'), 'Y'),  -- Gary (Groundskeeper) on Morning shift
+(4127, 612, 3001, TO_DATE('10/21/2024', 'MM/DD/YYYY'), 'Y'),  -- Wendell (Groundskeeper) on Morning shift
+(4128, 613, 3001, TO_DATE('10/22/2024', 'MM/DD/YYYY'), 'Y'),  -- Gemma (Groundskeeper) on Morning shift
+(4129, 614, 3001, TO_DATE('10/23/2024', 'MM/DD/YYYY'), 'Y'),  -- Stone (Groundskeeper) on Morning shift
+(4130, 615, 3001, TO_DATE('10/24/2024', 'MM/DD/YYYY'), 'Y'),  -- Matt (Groundskeeper) on Morning shift
+(4131, 616, 3001, TO_DATE('10/25/2024', 'MM/DD/YYYY'), 'Y'),  -- Billy (Groundskeeper) on Morning shift
+(4132, 617, 3001, TO_DATE('10/26/2024', 'MM/DD/YYYY'), 'Y'),  -- James (Groundskeeper) on Morning shift
+(4133, 618, 3001, TO_DATE('10/27/2024', 'MM/DD/YYYY'), 'Y'),  -- Oliver (Groundskeeper) on Morning shift
+(4134, 619, 3001, TO_DATE('10/28/2024', 'MM/DD/YYYY'), 'Y'),  -- Charlotte (Groundskeeper) on Morning shift
+(4135, 620, 3001, TO_DATE('10/29/2024', 'MM/DD/YYYY'), 'Y'),  -- Olivia (Groundskeeper) on Morning shift
+(4136, 621, 3001, TO_DATE('10/30/2024', 'MM/DD/YYYY'), 'Y'),  -- Isla (Groundskeeper) on Morning shift
+(4137, 622, 3001, TO_DATE('10/31/2024', 'MM/DD/YYYY'), 'Y'),  -- Henry (Groundskeeper) on Morning shift
+(4138, 604, 3001, TO_DATE('11/01/2024', 'MM/DD/YYYY'), 'Y'),  -- Dalton (Groundskeeper) on Morning shift
+(4139, 605, 3001, TO_DATE('11/02/2024', 'MM/DD/YYYY'), 'Y'),  -- Tori (Groundskeeper) on Morning shift
+(4140, 606, 3001, TO_DATE('11/03/2024', 'MM/DD/YYYY'), 'Y'),  -- Sven (Groundskeeper) on Morning shift
+(4141, 607, 3001, TO_DATE('11/04/2024', 'MM/DD/YYYY'), 'Y'),  -- Noel (Groundskeeper) on Morning shift
+(4142, 608, 3001, TO_DATE('11/05/2024', 'MM/DD/YYYY'), 'Y'),  -- Charlie (Groundskeeper) on Morning shift
+(4143, 609, 3001, TO_DATE('11/06/2024', 'MM/DD/YYYY'), 'Y'),  -- Matilda (Groundskeeper) on Morning shift
+(4144, 610, 3001, TO_DATE('11/07/2024', 'MM/DD/YYYY'), 'Y'),  -- Albert (Groundskeeper) on Morning shift
+(4145, 611, 3001, TO_DATE('11/08/2024', 'MM/DD/YYYY'), 'Y'),  -- Gary (Groundskeeper) on Morning shift
+(4146, 612, 3001, TO_DATE('11/09/2024', 'MM/DD/YYYY'), 'Y'),  -- Wendell (Groundskeeper) on Morning shift
+(4147, 613, 3001, TO_DATE('11/10/2024', 'MM/DD/YYYY'), 'Y'),  -- Gemma (Groundskeeper) on Morning shift
+(4148, 614, 3001, TO_DATE('11/11/2024', 'MM/DD/YYYY'), 'Y'),  -- Stone (Groundskeeper) on Morning shift
+(4149, 615, 3001, TO_DATE('11/12/2024', 'MM/DD/YYYY'), 'Y'),  -- Matt (Groundskeeper) on Morning shift
+(4150, 616, 3001, TO_DATE('11/13/2024', 'MM/DD/YYYY'), 'Y'),  -- Billy (Groundskeeper) on Morning shift
+(4151, 617, 3001, TO_DATE('11/14/2024', 'MM/DD/YYYY'), 'Y'),  -- James (Groundskeeper) on Morning shift
+(4152, 618, 3001, TO_DATE('11/15/2024', 'MM/DD/YYYY'), 'Y'),  -- Oliver (Groundskeeper) on Morning shift
+(4153, 619, 3001, TO_DATE('11/16/2024', 'MM/DD/YYYY'), 'Y'),  -- Charlotte (Groundskeeper) on Morning shift
+(4154, 620, 3001, TO_DATE('11/17/2024', 'MM/DD/YYYY'), 'Y'),  -- Olivia (Groundskeeper) on Morning shift
+(4155, 621, 3001, TO_DATE('11/18/2024', 'MM/DD/YYYY'), 'Y'),  -- Isla (Groundskeeper) on Morning shift
+(4156, 622, 3001, TO_DATE('11/19/2024', 'MM/DD/YYYY'), 'Y'),  -- Henry (Groundskeeper) on Morning shift
+(4157, 604, 3001, TO_DATE('11/20/2024', 'MM/DD/YYYY'), 'Y'),  -- Dalton (Groundskeeper) on Morning shift
+(4158, 605, 3001, TO_DATE('11/21/2024', 'MM/DD/YYYY'), 'Y'),  -- Tori (Groundskeeper) on Morning shift
+(4159, 606, 3001, TO_DATE('11/22/2024', 'MM/DD/YYYY'), 'Y');  -- Sven (Groundskeeper) on Morning shift
+
+
+INSERT INTO sanctuary_order
+VALUES
+(6001, 903, 1000, 3, TO_DATE('10/15/2024', 'MM/DD/YYYY')),
+(6002, 900, 1003, 4, TO_DATE('10/30/2024', 'MM/DD/YYYY')),
+(6003, 901, 1006, 10, TO_DATE('11/10/2024', 'MM/DD/YYYY')),
+(6004, 903, 1009, 38, TO_DATE('11/20/2024', 'MM/DD/YYYY')),
+(6005, 903, 1012, 3, TO_DATE('11/30/2024', 'MM/DD/YYYY')),
+(6006, 901, 1015, 2, TO_DATE('12/10/2024', 'MM/DD/YYYY')),
+(6007, 901, 1018, 10, TO_DATE('12/20/2024', 'MM/DD/YYYY')),
+(6008, 903, 1021, 4, TO_DATE('12/30/2024', 'MM/DD/YYYY')),
+(6009, 901, 1024, 5, TO_DATE('01/10/2025', 'MM/DD/YYYY')),
+(6010, 900, 1027, 10, TO_DATE('01/20/2025', 'MM/DD/YYYY')),
+(6011, 900, 1030, 38, TO_DATE('02/01/2024', 'MM/DD/YYYY'));
+
+INSERT INTO MEDICAL_SUPPLIES (ITEM_ID, TX_ID, SUPPLY_QTY, SUPPLY_DESCRIPTION)
+VALUES 
+    (424, 501, '10mL', NULL),
+    (425, 501, '100mL', NULL),
+    (426, 501, '1', NULL),
+    (438, 501, NULL, NULL),
+    (435, 501, '0.4 mL', NULL),
+    (439, 502, '0.01mg', NULL),
+    (425, 502, '20mL', NULL),
+    (428, 502, NULL, NULL),
+    (434, 502, '0.02mg', NULL),
+    (440, 503, '0.1 mg', NULL),
+    (435, 503, '0.1 mg', NULL),
+    (437, 504, '15 mg', NULL),
+    (440, 504, '0.7 mg', NULL),
+    (428, 504, NULL, NULL),
+    (429, 504, '40 mg/day for 7 days', NULL),
+    (435, 504, '0.15mg', NULL);
+
+INSERT INTO ORDER_LINE(ITEM_ID, ORDER_ID, QTY) 
+VALUES 
+(430, 6001, 3), 
+(436, 6002, 4), 
+(417, 6003, 10), 
+(423, 6004, 38), 
+(435, 6005, 3), 
+(415, 6006, 2), 
+(419, 6007, 10), 
+(404, 6008, 4), 
+(405, 6009, 5), 
+(436, 6010, 10), 
+(414, 6011, 35);
